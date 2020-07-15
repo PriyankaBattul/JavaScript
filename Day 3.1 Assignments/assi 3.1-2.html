@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Differance between var, let, & constant with examples</title>
+<body>
+<p>
+    1)Var
+         var is function scoped when it is declared within a function. 
+         This means that it is available and can be accessed only within that function.
+         code example-
+         var greeter = "hey hi";
+    
+    function newFunction() {
+        var hello = "hello";
+    }
+    2)Let
+        let is now preferred for variable declaration. 
+        It comes as an improvement to var declarations.
+          code example-
+          let greeting = "say Hi";
+    if (true) {
+        let greeting = "say Hello instead";
+        console.log(greeting); // "say Hello instead"
+    }
+    console.log(greeting); // "say Hi"
+
+    3)constant
+        Variables declared with the const maintain constant values. 
+        const declarations share some similarities with let declarations.
+         code example-
+         const greeting = {
+        message: "say Hi",
+        times: 4
+    }
+</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title></title>
+        
+    </head>
+    <body>
+<h1>Console helps to log information associated with a webpage</h1>
+<p>The Console methods are as follows (Click respective button and check result in Console) </p>
+<ul>
+   <li><button id="log">log()</button>&nbsp Displays log message in console</li><br>
+   <li><button id="err">error()</button>&nbsp Displays error message in console</li><br>
+   <li><button id="war">warn()</button>&nbsp Displays warning message in console</li><br>
+   <li><button id="tabl">table()</button>&nbsp Display the table</li><br>
+   <li><button id="cou">count()</button>&nbsp Shows the count</li><br>
+   <li><button id="clr">clear()</button>&nbsp Clears the console</li><br>
+</ul>
+
+<script type="text/javascript">
+document.getElementById("log").onclick = function(){console.log("This is the log");}
+
+document.getElementById("err").onclick = function(){console.error("Error message here");}
+
+document.getElementById("war").onclick = function(){console.warn("Just a warning");}
+
+document.getElementById("tabl").onclick = function(){
+    var t1 = {Singular:"Man", Plural:"Men"};
+    var t2 = {Singular:"Woman",Plural:"Woman"};
+    var t3 = {Singular:"Thing",Plural:"Things"};
+    console.table({t1,t2,t3});}
+
+document.getElementById("cou").onclick = function(){
+        for(let i=0;i<5;i++){
+        console.count("Countng 5 times");
+    }
+    }
+
+    document.getElementById("clr").onclick = function(){console.clear();}
+
+</script>
+    </body>
+</html>
